@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Python wiegand keypad reader
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+WorkingDirectory=/home/pi/keypad/app
+ExecStart=/usr/bin/python /home/pi/keypad/app/reader.py
+Restart=always
+User=pi

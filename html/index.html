@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oak Ridge School</title>
+    <script src="index.js" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="index.css?935">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Door Lock Control</h2>
+      <p>Oak Ridge School</p>
+      <div class="lock_btn_cont">
+        <div class="">
+          <button id="lock_btn" type="button" name="lock_btn">Unlock Doors</button>
+        </div>
+        <div class="">
+          <br>
+          <button id="editElemBtn" type="button" name="editElemBtn">Edit &#8615;</button>
+        </div>
+      </div>
+      <div id="editElem" class="iblock border hidden">
+        <button class="tabBtn tabActive" id="editScheduleTab" type="button" name="editScheduleTab">Schedule</button>
+        <button class="tabBtn" id="editCodesTab" type="button" name="editCodesTab">Door Codes</button>
+        <div id="tabsDiv">
+          <div id="scheduleTab" class="tab">
+            <div id="scheduleDiv" class="infoelem">
+
+            </div>
+            <button id="addSchedule" type="button" name="addSchedule">Add Schedule</button>
+            <button id="addBreak" type="button" name="addBreak">Add Break</button>
+          </div>
+          <div id="codesTab" class="tab hidden">
+            <div id="codesDiv" class="infoelem">
+
+            </div>
+            <button id="addCodes" type="button" name="addCodes">Add Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="apiModal" class="modal hidden">
+      <div class="modalBox border">
+        <div class="inputwrpr">
+          <input id="apiKeyInput" type="text" name="apiKeyInput" value="">
+        </div>
+        <button id="apiKeyFmBtn" type="submit" name="apiKeyFmBtn">Save</button>
+      </div>
+    </div>
+    <div id="codesModal" class="modal hidden">
+      <div class="modalBox border">
+        <div class="addCodes">
+          <form name="addCodes" class="" action="" method="post">
+            <div class="inputwrpr">
+              <label for="ctitle">Title</label>
+              <input id="ctitle" type="text" name="title" value="">
+            </div>
+            <div class="inputwrpr">
+              <label for="ccode">Code</label>
+              <input id="ccode" type="number" name="code" value="">
+            </div>
+            <div class="btnwrpr">
+              <button id="saveCdsBtn" type="button" name="codeFormBtn">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="schModal" class="modal hidden">
+      <div class="modalBox border">
+        <form name="scheduleForm" class="" action="" method="post">
+          <div class="inputwrpr">
+            <select class="" name="day">
+              <option value="Weekday">Weekday</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+            </select>
+          </div>
+          <div class="inputwrpr">
+            <input type="time" name="time" value="">
+          </div>
+          <div class="inputwrpr">
+            <select class="" name="action">
+              <option value="lock">lock</option>
+              <option value="unlock">unlock</option>
+            </select>
+          </div>
+          <button id="saveSch" type="button" name="saveSch">Add</button>
+        </form>
+      </div>
+    </div>
+    <div id="breaksModal" class="modal hidden">
+      <div class="modalBox border">
+        <h3>Pause Schedule</h3>
+        <form name="breaksForm" class="" action="" method="post">
+          <div class="inputwrpr">
+            <label for="st_date">Start</label>
+            <input id="st_date" type="date" name="st_date" value="">
+          </div>
+          <div class="inputwrpr">
+            <label for="end_date">End</label>
+            <input id="end_date" type="date" name="end_date" value="">
+          </div>
+          <button id="saveBreak" type="button" name="saveBreak">Add/Update</button>
+        </form>
+      </div>
+    </div>
+    <div id="loader" class="loaderDiv hidden">
+      <p>loading...</p>
+    </div>
+  </body>
+</html>

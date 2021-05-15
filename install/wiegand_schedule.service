@@ -1,0 +1,12 @@
+[Unit]
+Description=Python app for Lock Control Schedule
+After=network-online.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+WorkingDirectory=/home/pi/keypad/app
+ExecStart=/usr/bin/python /home/pi/keypad/app/schedule.py
+Restart=always
+User=pi

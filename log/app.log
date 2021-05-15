@@ -1,0 +1,1447 @@
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 18:37:05 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x81b468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+  File "/home/pi/keypad/app/api.py", line 7
+    if v not True:
+                ^
+SyntaxError: invalid syntax
+failed to parse file /home/pi/keypad/app/api.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2967)
+spawned uWSGI worker 1 (pid: 2971, cores: 8)
+--- no python application found, check your startup logs for errors ---
+[pid: 2971|app: -1|req: -1/1] 192.168.1.120 () {46 vars in 809 bytes} [Sat Apr 24 18:37:22 2021] POST //api => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 2971|app: -1|req: -1/2] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 18:37:44 2021] POST //api => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 2971|app: -1|req: -1/3] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 18:39:16 2021] POST //api => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 3)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:18:14 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x642468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+  File "/home/pi/keypad/app/api.py", line 9
+    if v not True:
+                ^
+SyntaxError: invalid syntax
+failed to parse file /home/pi/keypad/app/api.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3049)
+spawned uWSGI worker 1 (pid: 3053, cores: 8)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:18:51 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0xd71468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xd71468 pid: 3073 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3073)
+spawned uWSGI worker 1 (pid: 3077, cores: 8)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 27, in application
+    p = json.loads(post);
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+TypeError: expected string or buffer
+[pid: 3077|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:19:08 2021] POST //api => generated 0 bytes in 10 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:21:13 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x1ac8468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1ac8468 pid: 3094 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3094)
+spawned uWSGI worker 1 (pid: 3098, cores: 8)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 29, in application
+    if post.get("key") != k.get("key"):
+  File "/usr/lib/python2.7/cgi.py", line 527, in __getattr__
+    raise AttributeError, name
+AttributeError: get
+[pid: 3098|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:21:21 2021] POST //api => generated 0 bytes in 10 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:25:06 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x9d8468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x9d8468 pid: 3117 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3117)
+spawned uWSGI worker 1 (pid: 3122, cores: 8)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 29, in application
+    if post.get("key") != k["key"]:
+  File "/usr/lib/python2.7/cgi.py", line 527, in __getattr__
+    raise AttributeError, name
+AttributeError: get
+[pid: 3122|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:25:42 2021] POST //api => generated 0 bytes in 5 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:27:07 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x11c4468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x11c4468 pid: 3144 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3144)
+spawned uWSGI worker 1 (pid: 3148, cores: 8)
+[pid: 3148|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:27:18 2021] POST //api => generated 32 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:31:09 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x378468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x378468 pid: 3166 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3166)
+spawned uWSGI worker 1 (pid: 3170, cores: 8)
+[pid: 3170|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:31:18 2021] POST //api => generated 57 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:32:15 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x94b468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+  File "/home/pi/keypad/app/api.py", line 17
+    return '{"status":"200","codes":"'+}'
+                                       ^
+SyntaxError: invalid syntax
+failed to parse file /home/pi/keypad/app/api.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3187)
+spawned uWSGI worker 1 (pid: 3191, cores: 8)
+--- no python application found, check your startup logs for errors ---
+[pid: 3191|app: -1|req: -1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:32:21 2021] POST //api => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:32:37 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0xe9a468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xe9a468 pid: 3206 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3206)
+spawned uWSGI worker 1 (pid: 3211, cores: 8)
+[pid: 3211|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:32:40 2021] POST //api => generated 59 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:34:55 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x1724468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1724468 pid: 3228 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3228)
+spawned uWSGI worker 1 (pid: 3232, cores: 8)
+[pid: 3232|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:34:57 2021] POST //api => generated 68 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 19:35:30 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x1561468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1561468 pid: 3248 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3248)
+spawned uWSGI worker 1 (pid: 3252, cores: 8)
+[pid: 3252|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 19:35:33 2021] POST //api => generated 69 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 3252|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:04:30 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 3252|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:05:27 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 3252|app: 0|req: 4/4] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:05:28 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 3252|app: 0|req: 5/5] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:10:09 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 3252|app: 0|req: 6/6] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:11:17 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 3252|app: 0|req: 7/7] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:13:26 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 3252|app: 0|req: 8/8] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:13:30 2021] POST //api => generated 24 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 3252|app: 0|req: 9/9] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:14:12 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 37, in application
+    response = put_codes(post.getvalue("json"))
+  File "/home/pi/keypad/app/api.py", line 4, in put_codes
+    codes = json.loads(jsn)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+TypeError: expected string or buffer
+[pid: 3252|app: 0|req: 10/10] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:14:15 2021] POST //api => generated 0 bytes in 4 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+[pid: 3252|app: 0|req: 11/11] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:15:25 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 3252|app: 0|req: 12/12] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:15:29 2021] POST //api => generated 27 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 3252|app: 0|req: 13/13] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:15:40 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 3252|app: 0|req: 14/14] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:15:50 2021] POST //api => generated 27 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 3252|app: 0|req: 15/15] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:16:03 2021] POST //api => generated 27 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 20:17:00 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x30e468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x30e468 pid: 3286 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3286)
+spawned uWSGI worker 1 (pid: 3290, cores: 8)
+[pid: 3290|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:17:09 2021] POST //api => generated 69 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 3290|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:17:28 2021] POST //api => generated 27 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 3290|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:17:43 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 20:20:09 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x15a8468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x15a8468 pid: 3323 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3323)
+spawned uWSGI worker 1 (pid: 3327, cores: 8)
+[pid: 3327|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:20:36 2021] POST //api => generated 0 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 3327|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:20:57 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 3327|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:20:58 2021] POST //api => generated 69 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat Apr 24 20:21:49 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x1525468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1525468 pid: 3345 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3345)
+spawned uWSGI worker 1 (pid: 3349, cores: 8)
+[pid: 3349|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:22:03 2021] POST //api => generated 0 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 3349|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 805 bytes} [Sat Apr 24 20:22:07 2021] POST //api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat May  1 16:35:07 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x158a468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x158a468 pid: 338 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 338)
+spawned uWSGI worker 1 (pid: 438, cores: 8)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat May  1 21:29:12 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0xa66468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xa66468 pid: 338 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 338)
+spawned uWSGI worker 1 (pid: 438, cores: 8)
+[pid: 438|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 807 bytes} [Sat May  1 21:34:48 2021] POST //api => generated 24 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 438|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 805 bytes} [Sat May  1 21:36:14 2021] POST //api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 438|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 805 bytes} [Sat May  1 21:39:14 2021] POST //api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat May  1 22:07:35 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x8ea468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x8ea468 pid: 787 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 787)
+spawned uWSGI worker 1 (pid: 794, cores: 8)
+[pid: 794|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 805 bytes} [Sat May  1 22:07:41 2021] POST //api => generated 93 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 794|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 805 bytes} [Sat May  1 22:21:50 2021] POST //api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 56, in application
+    elif post.getvalue("method") == 'put_codes':
+TypeError: get_status() takes exactly 1 argument (0 given)
+[pid: 794|app: 0|req: 4/4] 192.168.1.120 () {50 vars in 858 bytes} [Sat May  1 22:22:00 2021] POST //api => generated 0 bytes in 6 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 5)
+[pid: 794|app: 0|req: 4/4] 192.168.1.120 () {50 vars in 858 bytes} [Sat May  1 22:22:00 2021] POST //api => generated 93 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat May  1 22:24:15 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x13f8468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x13f8468 pid: 829 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 829)
+spawned uWSGI worker 1 (pid: 836, cores: 8)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 59, in application
+    response = get_status()
+TypeError: [pid: 836|app: 0|req: 2/1] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:24:40 2021] POST /api => generated 93 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+get_status() takes exactly 1 argument (0 given)
+[pid: 836|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:24:40 2021] POST /api => generated 0 bytes in 12 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat May  1 22:25:47 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x1e9d468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1e9d468 pid: 884 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 884)
+spawned uWSGI worker 1 (pid: 892, cores: 8)
+[pid: 892|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:25:52 2021] POST /api => generated 56 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 892|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:25:52 2021] POST /api => generated 93 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 892|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:27:21 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 892|app: 0|req: 4/4] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:27:27 2021] POST /api => generated 56 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 892|app: 0|req: 5/5] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:28:35 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 892|app: 0|req: 6/6] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:28:35 2021] POST /api => generated 56 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 892|app: 0|req: 7/7] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:32:37 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 892|app: 0|req: 8/8] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:32:41 2021] POST /api => generated 56 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 892|app: 0|req: 10/9] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:33:16 2021] POST /api => generated 56 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 892|app: 0|req: 10/10] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:33:16 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 892|app: 0|req: 12/11] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:34:50 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 892|app: 0|req: 12/12] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:34:50 2021] POST /api => generated 56 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 892|app: 0|req: 13/13] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:35:12 2021] POST /api => generated 58 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 892|app: 0|req: 14/14] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:35:12 2021] POST /api => generated 58 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 892|app: 0|req: 15/15] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:35:18 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 892|app: 0|req: 16/16] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:35:18 2021] POST /api => generated 58 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 892|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:36:09 2021] POST /api => generated 58 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 892|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:36:09 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat May  1 22:36:39 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x1868468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1868468 pid: 912 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 912)
+spawned uWSGI worker 1 (pid: 920, cores: 8)
+[pid: 920|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:36:43 2021] POST /api => generated 39 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 920|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:36:43 2021] POST /api => generated 93 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 920|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:36:47 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 920|app: 0|req: 4/4] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:36:47 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 920|app: 0|req: 6/6] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:37:47 2021] POST /api => generated 39 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 920|app: 0|req: 6/6] 192.168.1.120 () {46 vars in 804 bytes} [Sat May  1 22:37:47 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 920|app: 0|req: 8/8] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 13:50:55 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 920|app: 0|req: 8/8] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 13:50:55 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 920|app: 0|req: 10/10] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:18:06 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 920|app: 0|req: 10/10] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:18:06 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 920|app: 0|req: 11/11] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:18:14 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 920|app: 0|req: 12/12] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:18:14 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 920|app: 0|req: 13/13] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:18:15 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 920|app: 0|req: 14/14] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:18:15 2021] POST /api => generated 37 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 920|app: 0|req: 16/16] 192.168.1.120 () {50 vars in 857 bytes} [Tue May  4 14:19:10 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 920|app: 0|req: 16/16] 192.168.1.120 () {50 vars in 857 bytes} [Tue May  4 14:19:10 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 920|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:20:01 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 920|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:20:01 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Tue May  4 14:23:41 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x60a468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x60a468 pid: 4231 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4231)
+spawned uWSGI worker 1 (pid: 4238, cores: 8)
+[pid: 4238|app: 0|req: 2/1] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:23:54 2021] POST /api => generated 93 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:23:54 2021] POST /api => generated 37 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:24:14 2021] POST /api => generated 203 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 4/4] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:25:18 2021] POST /api => generated 186 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 6/6] 192.168.1.120 () {50 vars in 857 bytes} [Tue May  4 14:27:19 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 6/6] 192.168.1.120 () {50 vars in 857 bytes} [Tue May  4 14:27:19 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 7/7] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:27:22 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 9/9] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:31:08 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 9/9] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:31:08 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 10/10] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:31:10 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 12/12] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:51:07 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 12/12] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 14:51:07 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 14/14] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:07:17 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 14/14] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:07:17 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 16/15] 192.168.1.120 () {50 vars in 857 bytes} [Tue May  4 15:07:19 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 16/16] 192.168.1.120 () {50 vars in 857 bytes} [Tue May  4 15:07:19 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:08:33 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:08:33 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 19/19] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:08:43 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 21/20] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:09:00 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 21/21] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:09:00 2021] POST /api => generated 37 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 22/22] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:09:03 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 24/24] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:10:57 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 24/24] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:10:57 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 26/26] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:11:11 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 26/26] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:11:11 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 28/28] 192.168.1.120 () {50 vars in 857 bytes} [Tue May  4 15:14:21 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 28/28] 192.168.1.120 () {50 vars in 857 bytes} [Tue May  4 15:14:21 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 29/29] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:14:23 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 30/30] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:16:07 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 31/31] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:16:07 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 33/33] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:16:09 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 33/33] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:16:09 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 34/34] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:16:13 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 36/35] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:16:41 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 36/36] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:16:41 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 37/37] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:16:44 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 39/39] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:17:17 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 39/39] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:17:17 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 40/40] 192.168.1.120 () {46 vars in 804 bytes} [Tue May  4 15:17:19 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 42/41] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:14:35 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 42/42] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:14:35 2021] POST /api => generated 93 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 43/43] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:16:01 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 44/44] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:19:20 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 45/45] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:19:20 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 47/47] 192.168.1.120 () {50 vars in 857 bytes} [Sun May  9 23:19:23 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 47/47] 192.168.1.120 () {50 vars in 857 bytes} [Sun May  9 23:19:23 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 49/49] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:23:04 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 49/49] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:23:04 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 51/50] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:24:52 2021] POST /api => generated 186 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 51/51] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:24:52 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 53/53] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:28:01 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 53/53] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:28:01 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 55/55] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:28:32 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 55/55] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:28:32 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 57/57] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:29:47 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 57/57] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:29:47 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 59/59] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:29:49 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 59/59] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:29:49 2021] POST /api => generated 186 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 61/60] 192.168.1.120 () {50 vars in 857 bytes} [Sun May  9 23:30:07 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 61/61] 192.168.1.120 () {50 vars in 857 bytes} [Sun May  9 23:30:07 2021] POST /api => generated 37 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 63/63] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:31:12 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 63/63] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:31:12 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 65/65] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:31:18 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 65/65] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:31:18 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 67/66] 192.168.1.120 () {50 vars in 857 bytes} [Sun May  9 23:31:28 2021] POST /api => generated 186 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 67/67] 192.168.1.120 () {50 vars in 857 bytes} [Sun May  9 23:31:28 2021] POST /api => generated 37 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 69/69] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:32:19 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 69/69] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:32:19 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 71/71] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:32:19 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 71/71] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:32:19 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 73/73] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:32:30 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 73/73] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:32:30 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 75/75] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:32:52 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 75/75] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:32:52 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 77/76] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:35:15 2021] POST /api => generated 186 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 77/77] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:35:15 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 79/78] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:35:46 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 79/79] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:35:46 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 81/80] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:36:04 2021] POST /api => generated 186 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 81/81] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:36:04 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 83/83] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:38:21 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 83/83] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:38:21 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 85/85] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:42:33 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 85/85] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:42:33 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 87/87] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:45:50 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 87/87] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:45:50 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 89/89] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:46:05 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 89/89] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:46:05 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 91/91] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:46:19 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 91/91] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:46:19 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 92/92] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:47:08 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 93/93] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:47:08 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 94/94] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:49:47 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 95/95] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:49:47 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 97/97] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:54:53 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 97/97] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:54:53 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 99/99] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:57:50 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 99/99] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:57:50 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 101/101] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:58:28 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 101/101] 192.168.1.120 () {46 vars in 804 bytes} [Sun May  9 23:58:28 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 102/102] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:00:53 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 103/103] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:00:53 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 104/104] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:01:07 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 105/105] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:01:07 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 107/107] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 00:01:13 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 107/107] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 00:01:13 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 109/109] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:01:17 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 109/109] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:01:17 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 111/110] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:01:58 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 111/111] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:01:58 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 113/113] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:11:05 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 113/113] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:11:05 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 115/114] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:14:56 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 115/115] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:14:56 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 117/116] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:16:10 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 117/117] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:16:10 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 119/118] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:16:24 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 119/119] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:16:24 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 121/121] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:16:28 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 121/121] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:16:28 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 123/122] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:17:17 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 123/123] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:17:17 2021] POST /api => generated 37 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 125/124] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:18:23 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 125/125] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:18:23 2021] POST /api => generated 37 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 127/127] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:18:27 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 127/127] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:18:27 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 129/129] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:18:30 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 129/129] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:18:30 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 131/131] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:27:23 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 131/131] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:27:23 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 133/132] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:27:27 2021] POST /api => generated 186 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 133/133] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 00:27:27 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 135/134] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:46:40 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 135/135] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:46:40 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 137/137] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:52:14 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 137/137] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:52:14 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 139/138] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:52:53 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 139/139] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:52:53 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 141/141] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:53:03 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 141/141] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:53:03 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 143/143] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:54:00 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 143/143] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:54:00 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 145/144] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 04:54:08 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 145/145] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 04:54:08 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 146/146] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 04:55:40 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 148/148] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 05:11:07 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 148/148] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 05:11:07 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 150/150] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 05:11:19 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 150/150] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 05:11:19 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 152/152] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:07:45 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 152/152] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:07:45 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 154/154] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:12:48 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 154/154] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:12:48 2021] POST /api => generated 186 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 156/156] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:14:12 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 156/156] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:14:12 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 158/158] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:16:22 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 158/158] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:16:22 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 160/160] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:16:44 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 160/160] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:16:44 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 162/162] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:17:01 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 162/162] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:17:01 2021] POST /api => generated 37 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 164/164] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:17:09 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 164/164] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:17:09 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 166/166] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:21:39 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 166/166] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:21:39 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 168/167] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:23:28 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 168/168] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:23:28 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 170/170] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:23:38 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 170/170] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:23:38 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 172/172] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:23:40 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 172/172] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:23:40 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 174/174] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:24:14 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 174/174] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:24:14 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 176/176] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:24:18 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 176/176] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:24:18 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 178/177] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:24:48 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 178/178] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:24:48 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 179/179] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:25:43 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 180/180] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:25:43 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 182/182] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:25:44 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 182/182] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:25:44 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 183/183] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:25:48 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 184/184] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:25:48 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 186/186] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:26:29 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 186/186] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:26:29 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 188/188] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:27:54 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 188/188] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:27:54 2021] POST /api => generated 186 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 189/189] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:28:05 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 190/190] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:28:05 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 191/191] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:28:06 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 192/192] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:28:06 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 194/194] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:28:45 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 194/194] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:28:45 2021] POST /api => generated 37 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 195/195] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:33:04 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 197/196] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:33:06 2021] POST /api => generated 186 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 197/197] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:33:06 2021] POST /api => generated 93 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 198/198] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:35:54 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 199/199] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:35:56 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 200/200] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:36:11 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 202/202] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:36:12 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 202/202] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:36:12 2021] POST /api => generated 186 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 203/203] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:38:21 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 204/204] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:38:45 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 205/205] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:39:38 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 206/206] 192.168.1.120 () {50 vars in 857 bytes} [Mon May 10 14:39:40 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 207/207] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:39:52 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 209/209] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:39:54 2021] POST /api => generated 186 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 209/209] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 14:39:54 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 210/210] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:10:12 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 212/211] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:10:14 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 212/212] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:10:14 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 213/213] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:10:50 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4238|app: 0|req: 215/214] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:10:52 2021] POST /api => generated 186 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4238|app: 0|req: 215/215] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:10:52 2021] POST /api => generated 93 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4238|app: 0|req: 216/216] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:13:38 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4238|app: 0|req: 218/218] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:13:39 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4238|app: 0|req: 218/218] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:13:39 2021] POST /api => generated 186 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4238|app: 0|req: 219/219] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:14:00 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4238|app: 0|req: 221/221] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:14:01 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4238|app: 0|req: 221/221] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:14:01 2021] POST /api => generated 186 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 78, in application
+    response = put_schedule(post.getvalue('schedule'))
+  File "/home/pi/keypad/app/api.py", line 36, in put_schedule
+    return json.dumps(r)
+AttributeError: 'str' object has no attribute 'dumps'
+[pid: 4238|app: 0|req: 222/222] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:14:05 2021] POST /api => generated 0 bytes in 4 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 3)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Mon May 10 15:20:13 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x1027468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1027468 pid: 340 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 340)
+spawned uWSGI worker 1 (pid: 446, cores: 8)
+[pid: 446|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:28:57 2021] POST /api => generated 37 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 446|app: 0|req: 3/2] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:28:58 2021] POST /api => generated 93 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 446|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 15:28:58 2021] POST /api => generated 143 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 446|app: 0|req: 4/4] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 17:41:47 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 446|app: 0|req: 6/6] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 17:41:50 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 446|app: 0|req: 6/6] 192.168.1.120 () {46 vars in 804 bytes} [Mon May 10 17:41:50 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 446|app: 0|req: 7/7] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 01:37:59 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 446|app: 0|req: 8/8] 192.168.1.120 () {46 vars in 834 bytes} [Thu May 13 01:38:10 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 446|app: 0|req: 10/10] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 01:38:53 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 446|app: 0|req: 10/10] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 01:38:53 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 446|app: 0|req: 11/11] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:20:56 2021] POST /api => generated 37 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 446|app: 0|req: 12/12] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:20:58 2021] POST /api => generated 93 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 446|app: 0|req: 13/13] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:20:58 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 446|app: 0|req: 14/14] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:27:52 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 446|app: 0|req: 16/16] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:27:54 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 446|app: 0|req: 16/16] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:27:54 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 446|app: 0|req: 17/17] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:28:13 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 446|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:28:13 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 446|app: 0|req: 19/19] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:29:48 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 446|app: 0|req: 20/20] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:29:51 2021] POST /api => generated 93 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 446|app: 0|req: 21/21] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:29:51 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 446|app: 0|req: 22/22] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:30:17 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 446|app: 0|req: 23/23] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:34:44 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 446|app: 0|req: 24/24] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:34:51 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 446|app: 0|req: 26/26] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:34:53 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 446|app: 0|req: 26/26] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:34:53 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 446|app: 0|req: 27/27] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:35:55 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 446|app: 0|req: 29/29] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:35:57 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 446|app: 0|req: 29/29] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:35:57 2021] POST /api => generated 143 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 78, in application
+    response = put_schedule(post.getvalue('schedule'))
+  File "/home/pi/keypad/app/api.py", line 36, in put_schedule
+    return json.dumps(r)
+AttributeError: 'str' object has no attribute 'dumps'
+[pid: 446|app: 0|req: 30/30] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:36:50 2021] POST /api => generated 0 bytes in 4 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 3)
+[pid: 446|app: 0|req: 31/31] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:37:21 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 446|app: 0|req: 33/33] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:37:27 2021] POST /api => generated 165 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 446|app: 0|req: 33/33] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:37:27 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 78, in application
+    response = put_schedule(post.getvalue('schedule'))
+  File "/home/pi/keypad/app/api.py", line 36, in put_schedule
+    return json.dumps(r)
+AttributeError: 'str' object has no attribute 'dumps'
+[pid: 446|app: 0|req: 34/34] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:37:47 2021] POST /api => generated 0 bytes in 4 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+[pid: 446|app: 0|req: 35/35] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:37:53 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 446|app: 0|req: 36/36] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:37:55 2021] POST /api => generated 93 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 446|app: 0|req: 37/37] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 05:37:55 2021] POST /api => generated 196 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+Traceback (most recent call last):
+  File "/home/pi/keypad/app/api.py", line 78, in application
+    response = put_schedule(post.getvalue('schedule'))
+  File "/home/pi/keypad/app/api.py", line 36, in put_schedule
+    return json.dumps(r)
+AttributeError: 'str' object has no attribute 'dumps'
+[pid: 446|app: 0|req: 38/38] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:07:12 2021] POST /api => generated 0 bytes in 4 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 3)
+[pid: 446|app: 0|req: 39/39] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:07:18 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 446|app: 0|req: 41/41] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:07:19 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 446|app: 0|req: 41/41] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:07:19 2021] POST /api => generated 165 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Thu May 13 14:52:33 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0xab2468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xab2468 pid: 4768 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4768)
+spawned uWSGI worker 1 (pid: 4775, cores: 8)
+[pid: 4775|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:52:41 2021] POST /api => generated 15 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 2/2] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:57:36 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:57:37 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4775|app: 0|req: 5/4] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:57:40 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4775|app: 0|req: 5/5] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:57:40 2021] POST /api => generated 165 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4775|app: 0|req: 6/6] 192.168.1.120 () {50 vars in 857 bytes} [Thu May 13 14:57:54 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4775|app: 0|req: 7/7] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:57:57 2021] POST /api => generated 93 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 8/8] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:57:57 2021] POST /api => generated 165 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 9/9] 192.168.1.120 () {50 vars in 857 bytes} [Thu May 13 14:58:19 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4775|app: 0|req: 11/11] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:58:21 2021] POST /api => generated 165 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 11/11] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:58:21 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 12/12] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 14:59:15 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4775|app: 0|req: 13/13] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:00:13 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4775|app: 0|req: 14/14] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:01:00 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4775|app: 0|req: 16/15] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:01:01 2021] POST /api => generated 93 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4775|app: 0|req: 16/16] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:01:01 2021] POST /api => generated 165 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 17/17] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:03:25 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4775|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:04:33 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 20/19] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:04:33 2021] POST /api => generated 93 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 20/20] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:04:33 2021] POST /api => generated 187 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4775|app: 0|req: 21/21] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:04:39 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4775|app: 0|req: 22/22] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:04:43 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4775|app: 0|req: 23/23] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:04:45 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4775|app: 0|req: 25/25] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:04:45 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 25/25] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:04:45 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4775|app: 0|req: 26/26] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:29 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 27/27] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:31 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 29/29] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:32 2021] POST /api => generated 174 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4775|app: 0|req: 29/29] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:32 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4775|app: 0|req: 30/30] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:42 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4775|app: 0|req: 31/31] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:44 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4775|app: 0|req: 33/32] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:45 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 33/33] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:45 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4775|app: 0|req: 34/34] 192.168.1.120 () {50 vars in 857 bytes} [Thu May 13 15:06:48 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 35/35] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:49 2021] POST /api => generated 93 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 36/36] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:06:49 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4775|app: 0|req: 37/37] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:07:10 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 38/38] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:07:28 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4775|app: 0|req: 40/39] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:07:29 2021] POST /api => generated 171 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 40/40] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:07:29 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4775|app: 0|req: 41/41] 192.168.1.120 () {50 vars in 857 bytes} [Thu May 13 15:10:20 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4775|app: 0|req: 42/42] 192.168.1.120 () {50 vars in 857 bytes} [Thu May 13 15:10:20 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 43/43] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:10:21 2021] POST /api => generated 93 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4775|app: 0|req: 44/44] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:10:21 2021] POST /api => generated 200 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4775|app: 0|req: 45/45] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:10:42 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 46/46] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:10:50 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4775|app: 0|req: 47/47] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:10:55 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 48/48] 192.168.1.120 () {50 vars in 857 bytes} [Thu May 13 15:24:02 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4775|app: 0|req: 50/50] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:24:03 2021] POST /api => generated 176 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 50/50] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:24:03 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4775|app: 0|req: 51/51] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:27:48 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4775|app: 0|req: 53/53] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:27:50 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4775|app: 0|req: 53/53] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:27:50 2021] POST /api => generated 176 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 54/54] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:29:13 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4775|app: 0|req: 56/56] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:29:14 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 56/56] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:29:14 2021] POST /api => generated 176 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4775|app: 0|req: 57/57] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:29:22 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 58/58] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:29:22 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 4775|app: 0|req: 59/59] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:29:23 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 4775|app: 0|req: 60/60] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:29:23 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 4775|app: 0|req: 61/61] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:31:48 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 4775|app: 0|req: 63/63] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:31:49 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 4775|app: 0|req: 63/63] 192.168.1.120 () {46 vars in 804 bytes} [Thu May 13 15:31:49 2021] POST /api => generated 176 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 4775|app: 0|req: 64/64] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:22:58 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 4775|app: 0|req: 66/65] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:23:13 2021] POST /api => generated 93 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 4775|app: 0|req: 66/66] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:23:13 2021] POST /api => generated 176 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Fri May 14 04:28:03 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x16ff468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x16ff468 pid: 5531 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5531)
+spawned uWSGI worker 1 (pid: 5538, cores: 8)
+[pid: 5538|app: 0|req: 1/1] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:34:33 2021] POST /api => generated 39 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:34:48 2021] POST /api => generated 93 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 3/3] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:34:48 2021] POST /api => generated 176 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 4/4] 192.168.1.120 () {50 vars in 857 bytes} [Fri May 14 04:34:49 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 6/6] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:34:50 2021] POST /api => generated 176 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 6/6] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:34:50 2021] POST /api => generated 93 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 7/7] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:34:54 2021] POST /api => generated 15 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 8/8] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:35:03 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 10/9] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:35:04 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 10/10] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 04:35:04 2021] POST /api => generated 176 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 11/11] 192.168.1.120 () {50 vars in 857 bytes} [Fri May 14 04:36:53 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 12/12] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 13:58:05 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 13/13] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 13:58:05 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 15/14] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 13:58:06 2021] POST /api => generated 67 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 15/15] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 13:58:06 2021] POST /api => generated 176 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 16/16] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 13:59:45 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 17/17] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 13:59:49 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 18/18] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 13:59:52 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 19/19] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:25 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 20/20] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:26 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 22/22] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:27 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 22/22] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:27 2021] POST /api => generated 176 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 23/23] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:31 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 24/24] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:33 2021] POST /api => generated 15 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 25/25] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:43 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 27/27] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:45 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 27/27] 192.168.1.120 () {46 vars in 804 bytes} [Fri May 14 14:01:45 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 28/28] 192.168.1.120 () {50 vars in 887 bytes} [Fri May 14 14:09:45 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 29/29] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:14:22 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 30/30] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:15:37 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 31/31] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:16:21 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 33/33] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:16:57 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 33/33] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:16:57 2021] POST /api => generated 37 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 35/35] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:16:58 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 35/35] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:16:58 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 36/36] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:17:07 2021] POST /api => generated 37 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 37/37] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:17:31 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 38/38] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:17:43 2021] POST /api => generated 67 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 39/39] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:17:43 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 40/40] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:18:09 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 41/41] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:18:19 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 42/42] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:18:19 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 43/43] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:19:03 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 45/45] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:19:06 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 45/45] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:19:06 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 46/46] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:19:39 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 47/47] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:27:21 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 48/48] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:27:23 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 49/49] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:27:24 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 50/50] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:27:42 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 51/51] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:27:43 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 52/52] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:27:52 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 53/53] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:27:59 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 54/54] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:27:59 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 55/55] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:28:05 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 56/56] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:28:05 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 57/57] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 14:28:34 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 58/58] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:32:13 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 59/59] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:32:31 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 60/60] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:33:13 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 61/61] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:36:50 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 63/63] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:36:55 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 63/63] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:36:55 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 64/64] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:38:08 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 66/65] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:38:10 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 66/66] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:38:10 2021] POST /api => generated 143 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 67/67] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:39:46 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 69/69] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:39:47 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 69/69] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:39:47 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 70/70] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:39:51 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 72/71] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:39:52 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 72/72] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:39:52 2021] POST /api => generated 143 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 73/73] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:40:05 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 74/74] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:40:06 2021] POST /api => generated 67 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 75/75] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:40:06 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 76/76] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:00 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 77/77] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:01 2021] POST /api => generated 67 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 78/78] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:01 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 79/79] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:19 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 81/81] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:20 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 81/81] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:20 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 82/82] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:34 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 84/84] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:35 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 84/84] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:35 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 85/85] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:55 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 87/87] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:56 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 87/87] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:41:56 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 88/88] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:03 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 90/89] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:04 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 90/90] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:04 2021] POST /api => generated 143 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 91/91] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:25 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 93/92] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:26 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 93/93] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:26 2021] POST /api => generated 67 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 94/94] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:36 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 95/95] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:37 2021] POST /api => generated 67 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 96/96] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:42:37 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 97/97] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:13 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 99/99] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:14 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 99/99] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:14 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 100/100] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:26 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 102/102] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:27 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 102/102] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:27 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 103/103] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:31 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 105/104] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:32 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 105/105] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:32 2021] POST /api => generated 143 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 106/106] 192.168.1.120 () {50 vars in 887 bytes} [Fri May 14 14:43:40 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 108/108] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:41 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 108/108] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:43:41 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 109/109] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:45:11 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 111/111] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:45:12 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 111/111] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:45:12 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 112/112] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:46:28 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 114/114] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:46:29 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 114/114] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:46:29 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 115/115] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:47:01 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 117/117] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:47:02 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 117/117] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:47:02 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 118/118] 192.168.1.120 () {50 vars in 887 bytes} [Fri May 14 14:55:22 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 120/119] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:55:23 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 120/120] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:55:23 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 121/121] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:55:44 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 123/123] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:55:45 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 123/123] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:55:45 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 124/124] 192.168.1.120 () {50 vars in 887 bytes} [Fri May 14 14:56:44 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 126/126] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:56:46 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 126/126] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:56:46 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 127/127] 192.168.1.120 () {50 vars in 887 bytes} [Fri May 14 14:57:58 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 129/129] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:57:59 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 129/129] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:57:59 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 130/130] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:58:23 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 132/131] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:58:24 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 132/132] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:58:24 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 133/133] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:59:41 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 135/135] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:59:42 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 135/135] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 14:59:42 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 136/136] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:00:46 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 137/137] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:00:47 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 139/139] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:00:48 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 139/139] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:00:48 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 140/140] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:03:13 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 141/141] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:03:14 2021] POST /api => generated 67 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 142/142] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:03:14 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 143/143] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:03:30 2021] POST /api => generated 39 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 145/145] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:03:32 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 145/145] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:03:32 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 147/147] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:05:27 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 147/147] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:05:27 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 149/149] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:05:47 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 149/149] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:05:47 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 151/150] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:12:10 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 151/151] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:12:10 2021] POST /api => generated 143 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 152/152] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:13:58 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 153/153] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:14:00 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 154/154] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:14:00 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 156/156] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:14:02 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 156/156] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:14:02 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 157/157] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:19:34 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 159/159] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:19:35 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 159/159] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:19:35 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 160/160] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:20:23 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 161/161] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:20:24 2021] POST /api => generated 67 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 162/162] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:20:24 2021] POST /api => generated 143 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 163/163] 192.168.1.120 () {46 vars in 834 bytes} [Fri May 14 15:21:08 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 164/164] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:21:12 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 166/166] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:21:13 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 166/166] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:21:13 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 167/167] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:21:47 2021] POST /api => generated 37 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 169/169] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:21:48 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 169/169] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:21:48 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 170/170] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:22:25 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 171/171] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:22:25 2021] POST /api => generated 39 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 172/172] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:22:28 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 173/173] 192.168.1.123 () {46 vars in 821 bytes} [Fri May 14 15:22:28 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 174/174] 192.168.1.120 () {46 vars in 804 bytes} [Sat May 15 03:41:26 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 176/176] 192.168.1.120 () {46 vars in 804 bytes} [Sat May 15 03:43:47 2021] POST /api => generated 67 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+[pid: 5538|app: 0|req: 176/176] 192.168.1.120 () {46 vars in 804 bytes} [Sat May 15 03:43:47 2021] POST /api => generated 143 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 5)
+[pid: 5538|app: 0|req: 177/177] 192.168.1.120 () {46 vars in 804 bytes} [Sat May 15 03:44:08 2021] POST /api => generated 15 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 4)
+[pid: 5538|app: 0|req: 178/178] 192.168.1.120 () {46 vars in 804 bytes} [Sat May 15 03:44:10 2021] POST /api => generated 15 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 3)
+[pid: 5538|app: 0|req: 179/179] 192.168.1.120 () {46 vars in 834 bytes} [Sat May 15 03:44:20 2021] POST /api => generated 37 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 6)
+[pid: 5538|app: 0|req: 180/180] 192.168.1.120 () {46 vars in 834 bytes} [Sat May 15 03:44:21 2021] POST /api => generated 37 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 182/181] 192.168.1.120 () {46 vars in 834 bytes} [Sat May 15 03:44:22 2021] POST /api => generated 88 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 2)
+[pid: 5538|app: 0|req: 182/182] 192.168.1.120 () {46 vars in 834 bytes} [Sat May 15 03:44:22 2021] POST /api => generated 143 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 0)
+[pid: 5538|app: 0|req: 183/183] 192.168.1.120 () {46 vars in 834 bytes} [Sat May 15 03:44:47 2021] POST /api => generated 15 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 76 bytes (1 switches on core 7)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (32bit) on [Sat May 15 14:11:29 2021] ***
+compiled with version: 8.3.0 on 24 April 2021 15:08:07
+os: Linux-5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020
+nodename: raspberrypi
+machine: armv7l
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/pi/keypad/app
+your processes number limit is 6886
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5590 fd 3
+Python version: 2.7.16 (default, Oct 10 2019, 22:02:15)  [GCC 8.3.0]
+Python main interpreter initialized at 0x10db468
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 234752 bytes (229 KB) for 8 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x10db468 pid: 7521 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7521)
+spawned uWSGI worker 1 (pid: 7528, cores: 8)
