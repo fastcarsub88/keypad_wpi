@@ -2,23 +2,26 @@ var codesObj = {};
 var scheduleObj = {};
 var codesDiv = document.getElementById('codesDiv');
 var lockBtn = document.getElementById('lock_btn');
-var schDiv = document.getElementById('scheduleDiv')
+var schDiv = document.getElementById('scheduleDiv');
+var lockLogDiv = document.getElementById('lockLogDiv');
 document.getElementById('apiKeyFmBtn').onclick = function(){
   localStorage.apiKey = document.getElementById('apiKeyInput').value;
   closeModal('apiModal');
   get_schedule();
   get_status();
-}
+};
 document.getElementById('editElemBtn').onclick = ()=>{
   get_codes();
   get_schedule();
+  get_lock_log();
   openModal('editElem');
-}
+};
 document.getElementById('addSchedule').onclick = ()=>{openModal('schModal')};
 document.getElementById('addBreak').onclick = ()=>{openModal('breaksModal')};
 document.getElementById('addCodes').onclick = ()=>{openModal('codesModal')};
 document.getElementById('editCodesTab').onclick = function(e){switchTab('codesTab',e.target)};
 document.getElementById('editScheduleTab').onclick = function(e){switchTab('scheduleTab',e.target)};
+document.getElementById('editLockLogTab').onclick = function(e){switchTab('lockLogTab',e.target)};
 document.getElementById('saveSch').onclick = () => {addSch(document.forms.scheduleForm,scheduleObj)}
 document.getElementById('saveBreak').onclick = () => {addBreak(document.forms.breaksForm,scheduleObj)}
 document.getElementById('saveCdsBtn').onclick = () => {addCodes(document.forms.addCodes,codesObj)}
@@ -72,6 +75,16 @@ async function get_schedule() {
   if (rsp.status == '200') {
     scheduleObj = JSON.parse(rsp.schedule);
     displaySch(scheduleObj);
+  }
+}
+async function get_lock_log() {
+  openModal('loader');
+  var f = new FormData();
+  f.append("method","get_lock_log");
+  var rsp = await send_data(f);
+  closeModal('loader');
+  if (rsp.status == '200') {
+    displayLockLog(rsp.lock_log);
   }
 }
 async function get_status() {
@@ -131,6 +144,12 @@ function displayCodes(cds) {
     codesDiv.append(p);
   }
 }
+function displayLockLog(arg) {
+  lockLogDiv.innerHTML = "";
+  var a = document.createElement('p');
+  a.innerText = arg;
+  lockLogDiv.append(a);
+}
 function displaySch(arg) {
   scheduleDiv.innerHTML = "";
   function z(obj,a) {
@@ -178,10 +197,16 @@ function addBreak(form,obj) {
   closeModal('breaksModal');
 }
 function addCodes(form,obj) {
-  codesObj[form.ctitle.value] = form.ccode.value;
+  if (form.ctitle.value == '') {return};
+  if (form.new_card.checked) {
+    codesObj['new_card'] = form.ctitle.value;
+  }else {
+    if (form.ccode.value == '') {return};
+    codesObj[form.ccode.value] = form.ctitle.value;
+  }
   upload('put_codes','codes',codesObj);
   displayCodes(codesObj);
-  closeModal('addCodesModal');
+  closeModal('codesModal');
 }
 function openModal(id) {
   document.getElementById(id).classList.remove('hidden');

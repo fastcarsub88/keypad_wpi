@@ -7,20 +7,12 @@ def put_codes(jsn):
     r['status'] = 200
     return json.dumps(r)
 
-def get_codes():
-    with open('allowed_codes.json') as f:
-        codes = f.read()
+def get_data(file,name):
+    with open(file) as f:
+        a = f.read()
     r = {}
     r['status'] = 200
-    r['codes'] = codes
-    return json.dumps(r)
-
-def get_schedule():
-    with open('schedule.json') as f:
-        sch = f.read()
-    r = {}
-    r['status'] = 200
-    r['schedule'] = sch
+    r[name] = a
     return json.dumps(r)
 
 def put_schedule(js):
@@ -74,11 +66,13 @@ def application(env, start_response):
         elif post.getvalue("method") == 'get_status':
             response = get_status()
         elif post.getvalue("method") == 'get_schedule':
-            response = get_schedule()
+            response = get_data('schedule.json','schedule')
+        elif post.getvalue("method") == 'get_lock_log':
+            response = get_data('lock_log','lock_log')
         elif post.getvalue("method") == 'put_schedule':
             response = put_schedule(post.getvalue('schedule'))
         else:
-            response = get_codes()
+            response = get_data('allowed_codes.json','codes')
     else:
         response = '{"error":"not allowed"}'
     start_response('200',[('Content-Type','text/html'),('Access-Control-Allow-Origin','*')])

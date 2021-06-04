@@ -23,6 +23,7 @@
       <div id="editElem" class="iblock border hidden">
         <button class="tabBtn tabActive" id="editScheduleTab" type="button" name="editScheduleTab">Schedule</button>
         <button class="tabBtn" id="editCodesTab" type="button" name="editCodesTab">Door Codes</button>
+        <button class="tabBtn" id="editLockLogTab" type="button" name="editLockLogTab">Log</button>
         <div id="tabsDiv">
           <div id="scheduleTab" class="tab">
             <div id="scheduleDiv" class="infoelem">
@@ -36,6 +37,11 @@
 
             </div>
             <button id="addCodes" type="button" name="addCodes">Add Code</button>
+          </div>
+          <div id="lockLogTab" class="tab hidden">
+            <div id="lockLogDiv" class="infoelem">
+
+            </div>
           </div>
         </div>
       </div>
@@ -59,6 +65,10 @@
             <div class="inputwrpr">
               <label for="ccode">Code</label>
               <input id="ccode" type="number" name="code" value="">
+            </div>
+            <div class="inputwrpr">
+              <label for="new_card">Card</label>
+              <input id="new_card" type="checkbox" name="new_card" value="">
             </div>
             <div class="btnwrpr">
               <button id="saveCdsBtn" type="button" name="codeFormBtn">Add</button>

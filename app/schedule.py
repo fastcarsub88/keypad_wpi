@@ -14,7 +14,7 @@ def unlock_door(arg):
     pi.write(17,0)
     lock_log('unlock')
 
-def chech_pause(pause_arr):
+def check_pause(pause_arr):
     for value in pause_arr:
         p = value.split('-')
         st = time.mktime(time.strptime(p[0],'%m/%d/%y'))
