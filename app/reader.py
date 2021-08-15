@@ -1,8 +1,8 @@
-import pigpio,wiegand,json,time,threading
-
+import pigpio,wiegand,json,threading,time,megaio as m
 
 input = ''
 keep_unlocked = False
+lst_btn_tm = 0
 
 def lock_log(usr,st):
     with open('lock_log') as f:
@@ -15,11 +15,11 @@ def lock_log(usr,st):
 
 def lock_unl(usr):
     global keep_unlocked
-    if pi.read(17) == 0:
-        pi.write(17,1)
+    if '{0:08b}'.format(m.get_relays(0))[2] == '1':
+        m.set_relay(0,6,0)
         lock_log(usr,'lock')
     else:
-        pi.write(17,0)
+        m.set_relay(0,6,1)
         lock_log(usr,"unlock")
         with open('config.json') as f:
             cnf = json.load(f)
@@ -31,7 +31,7 @@ def lock_unl(usr):
             keep_unlocked = False
             return
         else:
-            pi.write(17,1)
+            m.set_relay(0,6,0)
             lock_log(usr,'relock')
 
 def check_code(code):
@@ -47,7 +47,9 @@ def check_code(code):
         lock_unl(codes[code])
 
 def callback(bits,btn):
-    global input, keep_unlocked
+    global input, keep_unlocked, lst_btn_tm
+    if time.time() - lst_btn_tm > 15:
+        input = ''
     if btn == 11:
         t = threading.Thread(target=check_code, args=(input,))
         t.start()
@@ -58,13 +60,12 @@ def callback(bits,btn):
         input = ''
     elif btn == 10:
         keep_unlocked = True
+        input = ''
     else:
         input += str(btn)
+        lst_btn_tm = time.time()
 
 pi = pigpio.pi()
-pi.set_mode(17,pigpio.OUTPUT)
-pi.write(17,1)
-w = wiegand.decoder(pi,14,15,callback)
-
+w = wiegand.decoder(pi,22,27,callback)
 while True:
     time.sleep(5)

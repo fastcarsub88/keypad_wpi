@@ -1,5 +1,5 @@
-import cgi,json,pigpio
-from time import sleep
+import cgi,json,pigpio,time,megaio as m
+
 def put_codes(jsn):
     with open('allowed_codes.json','w') as f:
          f.write(jsn)
@@ -23,28 +23,26 @@ def put_schedule(js):
     return json.dumps(r)
 
 def get_status():
-    global pi
     r = {}
     r['status'] = 200
-    if pi.read(17) == 1:
+    if '{0:08b}'.format(m.get_relays(0))[2] == '0':
         r['d_status'] =  "locked"
     else:
         r['d_status'] = "unlocked"
     return json.dumps(r)
 
 def lock_unl():
-    global pi
-    if pi.read(17) == 1:
-        pi.write(17,0)
+    if '{0:08b}'.format(m.get_relays(0))[2] == '1':
+        m.set_relay(0,6,0)
         lock_log('lock')
     else:
-        pi.write(17,1)
-        lock_log('unlock')
+        m.set_relay(0,6,1)
+        lock_log("unlock")
     return get_status()
 
 def lock_log(st):
     with open("lock_log",'a') as f:
-        f.write(time.strftime('%D - $H:%M')+' - web:'+st)
+        f.write(time.strftime('%D - %H:%M')+' - web:'+st)
 
 def application(env, start_response):
     if env['REQUEST_METHOD'] == 'POST':

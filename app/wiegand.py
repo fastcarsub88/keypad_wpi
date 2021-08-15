@@ -125,7 +125,7 @@ if __name__ == "__main__":
 
    pi = pigpio.pi()
 
-   w = wiegand.decoder(pi, 14, 15, callback)
+   w = wiegand.decoder(pi, 22, 27, callback)
 
    time.sleep(300)
 

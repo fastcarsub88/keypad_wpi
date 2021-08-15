@@ -6,7 +6,7 @@ Description=Python wiegand keypad reader
 WantedBy=multi-user.target
 
 [Service]
-WorkingDirectory=/home/pi/keypad/app
-ExecStart=/usr/bin/python /home/pi/keypad/app/reader.py
+WorkingDirectory=/home/pi/keypad_wpi/app
+ExecStart=/usr/bin/python /home/pi/keypad_wpi/app/reader.py
 Restart=always
 User=pi

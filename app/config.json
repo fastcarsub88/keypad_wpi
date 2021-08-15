@@ -1,4 +1,4 @@
 {
   "relock":"true",
-  "relock_delay": 5
+  "relock_delay": 30
 }
