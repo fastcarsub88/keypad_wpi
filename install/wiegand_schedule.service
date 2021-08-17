@@ -6,7 +6,7 @@ After=network-online.target
 WantedBy=multi-user.target
 
 [Service]
-WorkingDirectory=/home/pi/keypad/app
-ExecStart=/usr/bin/python /home/pi/keypad/app/schedule.py
+WorkingDirectory=/home/pi/keypad_wpi/app
+ExecStart=/usr/bin/python /home/pi/keypad_wpi/app/schedule.py
 Restart=always
 User=pi
