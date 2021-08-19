@@ -1,5 +1,6 @@
 import pigpio,json
-from time import sleep
+import time
+l_min = ''
 
 def lock_log(st):
     with open("lock_log",'a') as f:
@@ -35,21 +36,21 @@ def check__schedule():
         if check_pause(sch['breaks']):
             return
     day = time.strftime('%A')
-    time = time.strftime('%H:%M')
+    ctime = time.strftime('%H:%M')
     if day in sch:
-        if time in sch[day]:
-            if sch[day][time] == 'lock':
+        if ctime in sch[day]:
+            if sch[day][ctime] == 'lock':
                 lock_door()
             else:
                 unlock_door()
     if 'weekday' in sch:
-        if time in sch['weekday']:
-            if sch['weekday'][time] == 'lock':
+        if ctime in sch['weekday']:
+            if sch['weekday'][ctime] == 'lock':
                 lock_door()
             else:
                 unlock_door()
 
 
 while True:
-    sleep(5)
+    time.sleep(5)
     check_schedule()
