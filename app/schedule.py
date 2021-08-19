@@ -10,7 +10,7 @@ def lock_door():
     lock_log('lock')
 
 
-def unlock_door(arg):
+def unlock_door():
     pi.write(17,0)
     lock_log('unlock')
 
@@ -24,7 +24,7 @@ def check_pause(pause_arr):
             return True
     return False
 
-def check__schedule(arg):
+def check__schedule():
     global l_min
     c_min = time.strftime('%M')
     if l_min == c_min:
