@@ -7,6 +7,6 @@ After=network-online.target
 WantedBy=multi-user.target
 
 [Service]
-ExecStart=/usr/local/bin/uwsgi --ini /home/pi/keypad/app/app.ini
+ExecStart=/usr/local/bin/uwsgi --ini /home/pi/keypad_wpi/app/app.ini
 Restart=on-failure
 User=pi
