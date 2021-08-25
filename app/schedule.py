@@ -5,7 +5,7 @@ pi = pigpio.pi()
 
 def lock_log(st):
     with open("lock_log",'a') as f:
-        f.write(time.strftime('%D - $H:%M')+' - schedule:'+st)
+        f.write(time.strftime('%D - %H:%M')+' - schedule:'+st+'\n')
 
 def lock_door():
     pi.write(17,1)
@@ -31,6 +31,7 @@ def check_schedule():
     c_min = time.strftime('%M')
     if l_min == c_min:
         return
+    l_min = c_min
     with open('schedule.json') as f:
         sch = json.load(f)
     if 'Breaks' in sch:
