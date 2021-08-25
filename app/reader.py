@@ -1,7 +1,7 @@
 import pigpio,wiegand,json,threading,time,megaio as m
 
 input = ''
-keep_unlocked = False
+keep_unlocked = 'false'
 lst_btn_tm = 0
 
 def lock_log(usr,st):
@@ -21,14 +21,15 @@ def lock_unl(usr):
     else:
         m.set_relay(0,6,1)
         lock_log(usr,"unlock")
+        lock_log('test',keep_unlocked)
         with open('config.json') as f:
             cnf = json.load(f)
         if cnf['relock'] == 'false':
             return
         time.sleep(int(cnf['relock_delay']))
-        if keep_unlocked == True:
+        if keep_unlocked == 'true':
             lock_log(usr,'no-relock')
-            keep_unlocked = False
+            keep_unlocked = 'false'
             return
         else:
             m.set_relay(0,6,0)
@@ -57,13 +58,15 @@ def callback(bits,btn):
         t.start()
         input = ''
     elif btn == 10:
-        keep_unlocked = True
+        lock_log("keep_unlocked",keep_unlocked)
+        keep_unlocked = "true"
         input = ''
     else:
-        if time.time() - lst_btn_tm > 15:
+        timestamp = time.time()
+        if timestamp - lst_btn_tm > 5:
             input = ''
         input += str(btn)
-        lst_btn_tm = time.time()
+        lst_btn_tm = timestamp
 
 pi = pigpio.pi()
 w = wiegand.decoder(pi,22,27,callback)
