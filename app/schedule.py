@@ -33,7 +33,7 @@ def check_schedule():
     with open('schedule.json') as f:
         sch = json.load(f)
     if 'Breaks' in sch:
-        if check_pause(sch['breaks']):
+        if check_pause(sch['Breaks']):
             return
     day = time.strftime('%A')
     ctime = time.strftime('%H:%M')
