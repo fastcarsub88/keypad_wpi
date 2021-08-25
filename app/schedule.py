@@ -1,10 +1,7 @@
 import pigpio,json
 import time
 l_min = ''
-<<<<<<< HEAD
-=======
 
->>>>>>> 06c5aab06de5e03c12778be3a11c8213af92d0cd
 def lock_log(st):
     with open("lock_log",'a') as f:
         f.write(time.strftime('%D - $H:%M')+' - schedule:'+st)
@@ -35,7 +32,7 @@ def check_schedule():
         return
     with open('schedule.json') as f:
         sch = json.load(f)
-    if 'breaks' in sch:
+    if 'Breaks' in sch:
         if check_pause(sch['breaks']):
             return
     day = time.strftime('%A')
@@ -46,9 +43,9 @@ def check_schedule():
                 lock_door()
             else:
                 unlock_door()
-    if 'weekday' in sch:
-        if ctime in sch['weekday']:
-            if sch['weekday'][ctime] == 'lock':
+    if 'Weekday' in sch:
+        if ctime in sch['Weekday']:
+            if sch['Weekday'][ctime] == 'lock':
                 lock_door()
             else:
                 unlock_door()
