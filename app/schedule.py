@@ -1,6 +1,7 @@
 import pigpio,json
 import time
 l_min = ''
+pi = pigpio.pi()
 
 def lock_log(st):
     with open("lock_log",'a') as f:
