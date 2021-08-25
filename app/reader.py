@@ -48,8 +48,6 @@ def check_code(code):
 
 def callback(bits,btn):
     global input, keep_unlocked, lst_btn_tm
-    if time.time() - lst_btn_tm > 15:
-        input = ''
     if btn == 11:
         t = threading.Thread(target=check_code, args=(input,))
         t.start()
@@ -62,6 +60,8 @@ def callback(bits,btn):
         keep_unlocked = True
         input = ''
     else:
+        if time.time() - lst_btn_tm > 15:
+            input = ''
         input += str(btn)
         lst_btn_tm = time.time()
 
