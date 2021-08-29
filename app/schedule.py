@@ -46,6 +46,8 @@ def check_schedule():
             else:
                 unlock_door()
     if 'Weekday' in sch:
+        if day == 'Saturday' or day == 'Sunday':
+            return
         if ctime in sch['Weekday']:
             if sch['Weekday'][ctime] == 'lock':
                 lock_door()
