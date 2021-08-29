@@ -42,7 +42,7 @@ def lock_unl():
 
 def lock_log(st):
     with open("lock_log",'a') as f:
-        f.write(time.strftime('%D - %H:%M')+' - web:'+st)
+        f.write(time.strftime('%D - %H:%M')+' - web:'+st+'\n')
 
 def application(env, start_response):
     if env['REQUEST_METHOD'] == 'POST':

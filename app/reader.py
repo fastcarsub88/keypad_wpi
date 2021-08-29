@@ -14,14 +14,12 @@ def lock_log(usr,st):
         f.write(''.join(a))
 
 def lock_unl(usr):
-    global keep_unlocked
     if '{0:08b}'.format(m.get_relays(0))[2] == '1':
         m.set_relay(0,6,0)
         lock_log(usr,'lock')
     else:
         m.set_relay(0,6,1)
         lock_log(usr,"unlock")
-        lock_log('test',keep_unlocked)
         with open('config.json') as f:
             cnf = json.load(f)
         if cnf['relock'] == 'false':
@@ -29,7 +27,7 @@ def lock_unl(usr):
         time.sleep(int(cnf['relock_delay']))
         if keep_unlocked == 'true':
             lock_log(usr,'no-relock')
-            keep_unlocked = 'false'
+            set_keep_unlocked('false')
             return
         else:
             m.set_relay(0,6,0)
@@ -47,8 +45,13 @@ def check_code(code):
     if code in codes:
         lock_unl(codes[code])
 
+def keep_unlocked(state):
+    global keep_unlocked
+    lock_log('test','keep_unlocked set'+state)
+    keep_unlocked = state
+
 def callback(bits,btn):
-    global input, keep_unlocked, lst_btn_tm
+    global input, lst_btn_tm
     if btn == 11:
         t = threading.Thread(target=check_code, args=(input,))
         t.start()
@@ -58,13 +61,14 @@ def callback(bits,btn):
         t.start()
         input = ''
     elif btn == 10:
-        lock_log("keep_unlocked",keep_unlocked)
-        keep_unlocked = "true"
+        lock_log("test",'star pressed')
+        set_keep_unlocked('true')
         input = ''
     else:
         timestamp = time.time()
         if timestamp - lst_btn_tm > 5:
             input = ''
+            keep_unlocked('false')
         input += str(btn)
         lst_btn_tm = timestamp
 
