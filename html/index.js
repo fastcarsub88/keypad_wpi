@@ -4,6 +4,7 @@ var codesDiv = document.getElementById('codesDiv');
 var lockBtn = document.getElementById('lock_btn');
 var schDiv = document.getElementById('scheduleDiv');
 var lockLogDiv = document.getElementById('lockLogDiv');
+
 document.getElementById('apiKeyFmBtn').onclick = function(){
   localStorage.apiKey = document.getElementById('apiKeyInput').value;
   closeModal('apiModal');
@@ -16,6 +17,15 @@ document.getElementById('editElemBtn').onclick = ()=>{
   get_lock_log();
   openModal('editElem');
 };
+document.getElementById('select2').onchange = function () {
+  if (this.value == 'keepunlock') {
+    openModal('keepunlockinput')
+    closeModal('defaultinput')
+  }else {
+    closeModal('keepunlockinput')
+    openModal('defaultinput')
+  }
+}
 document.getElementById('addSchedule').onclick = ()=>{openModal('schModal')};
 document.getElementById('addBreak').onclick = ()=>{openModal('breaksModal')};
 document.getElementById('addCodes').onclick = ()=>{openModal('codesModal')};
@@ -31,6 +41,10 @@ window.addEventListener('click',function (e) {
   }
 })
 lockBtn.onclick = lock_unl
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 async function lock_unl () {
   var f = new FormData();
   f.append("method","lock_unl");
@@ -155,7 +169,13 @@ function displaySch(arg) {
   function z(obj,a) {
     for (let [d,e] of Object.entries(obj)){
       var f = document.createElement('p');
-      f.innerText = (d.length > 1 ? (e+' : '+d) : e);
+      if (d == 'keepunlock') {
+        f.innerText = "Keep Unlocked : "+e
+      }else if (d.length > 1) {
+        f.innerText = capitalize(e)+' : '+d
+      }else {
+        f.innerText = e
+      }
       f.onclick = deleteSch;
       f.day = a;
       f.time = d;
@@ -177,11 +197,23 @@ function displaySch(arg) {
   scheduleDiv.append(c);
 }
 function addSch(form,obj) {
-  var a = form.day.value;
-  var b = form.time.value;
-  var c = form.action.value;
   if (!scheduleObj[a]) {scheduleObj[a] = {}}
-  scheduleObj[a][b] = c;
+  var a = form.day.value;
+  if (form.action.value == 'keepunlock'){
+    if (form.time2.value == '' || form.time3.value == '') {
+      alert('Please input 2 times..')
+      return
+    }
+    if (form.time2.value > form.time3.value) {
+      alert("End time before start time..")
+      return
+    }
+    var b = form.time2.value+','+form.time3.value;
+    scheduleObj[a][form.action.value] = b;
+  }else {
+    var b = form.time1.value;
+    scheduleObj[a][b] = form.action.value;
+  }
   upload('put_schedule','schedule',scheduleObj);
   displaySch(scheduleObj);
   closeModal('schModal');

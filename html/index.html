@@ -81,7 +81,7 @@
       <div class="modalBox border">
         <form name="scheduleForm" class="" action="" method="post">
           <div class="inputwrpr">
-            <select class="" name="day">
+            <select id="select1" class="" name="day">
               <option value="Weekday">Weekday</option>
               <option value="Sunday">Sunday</option>
               <option value="Monday">Monday</option>
@@ -93,14 +93,30 @@
             </select>
           </div>
           <div class="inputwrpr">
-            <input type="time" name="time" value="">
-          </div>
-          <div class="inputwrpr">
-            <select class="" name="action">
+            <select id="select2" class="" name="action">
               <option value="lock">lock</option>
               <option value="unlock">unlock</option>
+              <option value="keepunlock">keep unlock</option>
             </select>
           </div>
+          <div id="defaultinput"class="inputwrpr">
+            <input type="time" name="time1" value="">
+          </div>
+          <div id="keepunlockinput"class="hidden">
+            <div class="inputwrpr">
+              <div class="textLeft">
+                <span>From</span>
+              </div>
+              <input type="time" name="time2" value="">
+            </div>
+            <div class="inputwrpr">
+              <div class="textLeft">
+                <span>To</span>
+              </div>
+              <input type="time" name="time3" value="">
+            </div>
+          </div>
+
           <button id="saveSch" type="button" name="saveSch">Add</button>
         </form>
       </div>

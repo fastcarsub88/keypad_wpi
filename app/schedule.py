@@ -30,6 +30,15 @@ def check_pause(pause_arr):
             return True
     return False
 
+def keepunlock(sched):
+    times = split(sched['Weekday']['keepunlock'])
+    t = int(ctime.replace(':',''))
+    t1 = int(times[0].replace(':',''))
+    t2 = int(times[1].replace(':',''))
+    if t > t1 and t < t2:
+        return True
+    return False
+
 def check_schedule():
     global l_min
     c_min = time.strftime('%M')
@@ -46,6 +55,9 @@ def check_schedule():
     if ctime == '00:01':
         lock_log_trucate()
     if day in sch:
+        if "keepunlock" in sch[day]:
+            if keepunlock(sch):
+                return
         if ctime in sch[day]:
             if sch[day][ctime] == 'lock':
                 lock_door()
@@ -54,6 +66,9 @@ def check_schedule():
     if 'Weekday' in sch:
         if day == 'Saturday' or day == 'Sunday':
             return
+        if "keepunlock" in sch['Weekday']:
+            if keepunlock(sch):
+                return
         if ctime in sch['Weekday']:
             if sch['Weekday'][ctime] == 'lock':
                 lock_door()

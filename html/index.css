@@ -12,6 +12,7 @@ input,select{
   border: 0;
   border-bottom: 1px solid;
 }
+.textLeft{text-align: left;}
 .container{
   text-align: center;
 }
