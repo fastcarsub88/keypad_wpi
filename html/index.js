@@ -44,7 +44,6 @@ lockBtn.onclick = lock_unl
 function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
 async function lock_unl () {
   var f = new FormData();
   f.append("method","lock_unl");
@@ -197,8 +196,7 @@ function displaySch(arg) {
   scheduleDiv.append(c);
 }
 function addSch(form,obj) {
-  if (!scheduleObj[a]) {scheduleObj[a] = {}}
-  var a = form.day.value;
+  if (!scheduleObj[form.day.value]) {scheduleObj[form.day.value] = {}}
   if (form.action.value == 'keepunlock'){
     if (form.time2.value == '' || form.time3.value == '') {
       alert('Please input 2 times..')
@@ -208,11 +206,9 @@ function addSch(form,obj) {
       alert("End time before start time..")
       return
     }
-    var b = form.time2.value+','+form.time3.value;
-    scheduleObj[a][form.action.value] = b;
+    scheduleObj[form.day.value][form.action.value] = form.time2.value+'-'+form.time3.value;;
   }else {
-    var b = form.time1.value;
-    scheduleObj[a][b] = form.action.value;
+    scheduleObj[form.day.value][form.time1.value] = form.action.value;
   }
   upload('put_schedule','schedule',scheduleObj);
   displaySch(scheduleObj);

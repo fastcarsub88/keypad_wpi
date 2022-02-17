@@ -31,7 +31,7 @@ def check_pause(pause_arr):
     return False
 
 def keepunlock(sched):
-    times = split(sched['Weekday']['keepunlock'])
+    times = sched['Weekday']['keepunlock'].split('-')
     t = int(ctime.replace(':',''))
     t1 = int(times[0].replace(':',''))
     t2 = int(times[1].replace(':',''))
