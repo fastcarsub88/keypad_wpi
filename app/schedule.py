@@ -57,6 +57,7 @@ def check_schedule():
     if day in sch:
         if "keepunlock" in sch[day]:
             if keepunlock(sch,ctime):
+                unlock_door()
                 return
         if ctime in sch[day]:
             if sch[day][ctime] == 'lock':
@@ -68,6 +69,7 @@ def check_schedule():
             return
         if "keepunlock" in sch['Weekday']:
             if keepunlock(sch,ctime):
+                unlock_door()
                 return
         if ctime in sch['Weekday']:
             if sch['Weekday'][ctime] == 'lock':
