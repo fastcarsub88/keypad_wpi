@@ -1,1 +1,1 @@
-{"Weekday":{"08:00":"unlock","16:00":"lock"},"Breaks":["05/05/21-05/09/21","05/01/21-06/09/21"]}
+{"Weekday":{"16:00":"lock","23:30":"lock","08:15":"unlock"},"Breaks":[],"Sunday":{"23:30":"lock"},"Saturday":{"23:30":"lock"}}

@@ -14,6 +14,9 @@ def lock_log(usr,st):
         f.write(''.join(a))
 
 def lock_unl(usr):
+    pi.write(17,0)
+    time.sleep(0.5)
+    pi.write(17,1)
     if '{0:08b}'.format(m.get_relays(0))[2] == '1':
         m.set_relay(0,6,0)
         lock_log(usr,'lock')
@@ -45,9 +48,8 @@ def check_code(code):
     if code in codes:
         lock_unl(codes[code])
 
-def keep_unlocked(state):
+def set_keep_unlocked(state):
     global keep_unlocked
-    lock_log('test','keep_unlocked set'+state)
     keep_unlocked = state
 
 def callback(bits,btn):
@@ -68,11 +70,13 @@ def callback(bits,btn):
         timestamp = time.time()
         if timestamp - lst_btn_tm > 5:
             input = ''
-            keep_unlocked('false')
+            set_keep_unlocked('false')
         input += str(btn)
         lst_btn_tm = timestamp
 
 pi = pigpio.pi()
+pi.set_mode(17, pigpio.OUTPUT)
+pi.write(17,1)
 w = wiegand.decoder(pi,22,27,callback)
 while True:
     time.sleep(5)

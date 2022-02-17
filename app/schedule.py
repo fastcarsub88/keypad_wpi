@@ -1,20 +1,24 @@
-import pigpio,json
-import time
+import json, time, megaio as m
 l_min = ''
-pi = pigpio.pi()
 
 def lock_log(st):
     with open("lock_log",'a') as f:
         f.write(time.strftime('%D - %H:%M')+' - schedule:'+st+'\n')
 
 def lock_door():
-    pi.write(17,1)
+    m.set_relay(0,6,0)
     lock_log('lock')
 
 
 def unlock_door():
-    pi.write(17,0)
+    m.set_relay(0,6,1)
     lock_log('unlock')
+
+def lock_log_trucate():
+    with open("lock_log", "r+") as f:
+        for x in xrange(50):
+            f.readline()
+        f.truncate()
 
 def check_pause(pause_arr):
     for value in pause_arr:
@@ -39,6 +43,8 @@ def check_schedule():
             return
     day = time.strftime('%A')
     ctime = time.strftime('%H:%M')
+    if ctime == '00:01':
+        lock_log_trucate()
     if day in sch:
         if ctime in sch[day]:
             if sch[day][ctime] == 'lock':
