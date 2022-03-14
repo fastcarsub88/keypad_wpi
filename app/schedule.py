@@ -35,7 +35,13 @@ def keepunlock(sched,ctime):
     t = int(ctime.replace(':',''))
     t1 = int(times[0].replace(':',''))
     t2 = int(times[1].replace(':',''))
-    if t > t1 and t < t2:
+    if t == t1 or (t > t1 and t < t2):
+        if '{0:08b}'.format(m.get_relays(0))[2] == '1':
+            return True
+        unlock_door()
+        return True
+    if t == t2:
+        lock_door()
         return True
     return False
 
@@ -56,9 +62,7 @@ def check_schedule():
         lock_log_trucate()
     if day in sch:
         if "keepunlock" in sch[day]:
-            if keepunlock(sch,ctime):
-                unlock_door()
-                return
+            keepunlock(sch,ctime):
         if ctime in sch[day]:
             if sch[day][ctime] == 'lock':
                 lock_door()
@@ -68,9 +72,7 @@ def check_schedule():
         if day == 'Saturday' or day == 'Sunday':
             return
         if "keepunlock" in sch['Weekday']:
-            if keepunlock(sch,ctime):
-                unlock_door()
-                return
+            keepunlock(sch,ctime)
         if ctime in sch['Weekday']:
             if sch['Weekday'][ctime] == 'lock':
                 lock_door()
